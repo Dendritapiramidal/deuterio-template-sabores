@@ -25,7 +25,7 @@ jobs:
         run: echo "SITE_ID=$(cat .netlify-site-id)" >> $GITHUB_OUTPUT
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v3
+        uses: nwtgck/actions-netlify@v2.0
         with:
           publish-dir: .output/public
           production-deploy: true
